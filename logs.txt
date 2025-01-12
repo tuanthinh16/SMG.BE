@@ -1,0 +1,221 @@
+2025-01-12 16:17:44,342 - INFO - Request Method: POST
+2025-01-12 16:17:44,342 - INFO - Request URL: http://127.0.0.1:5000/api/v1/
+2025-01-12 16:17:44,343 - INFO - Request Headers: Accept: */*
+Content-Type: application/json
+User-Agent: PostmanClient/11.27.2 (AppId=3666f205-f988-40bc-943f-aedf57fa62b4)
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNjY3MTI4MCwianRpIjoiMzA2YWIzMTctMzc2YS00ZWEwLTlkNjUtZTJiODU2YTFhY2UwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3MzY2NzEyODAsImNzcmYiOiI2MGUzYzkwZS01ZTc4LTRjNTMtYjk0Zi0yNGI1YjhiYTk0YzciLCJleHAiOjE3MzY2NzIxODB9.lp9wOk86Kh9fFiTLdlHibnG2sMRFhcRq9hYk0dF-7EQ
+Host: 127.0.0.1:5000
+Content-Length: 331
+Connection: keep-alive
+
+
+2025-01-12 16:17:44,343 - INFO - Request Data: {"query":"query Users {\n    users {\n        ID\n        CREATOR\n        MODIFIER\n        IS_ACTIVE\n        USERNAME\n        LOGINNAME\n        FULLNAME\n        ADDRESS\n        PHONE\n        EMAIL\n        ROLE\n        CREATE_TIME\n        MODIFY_TIME\n        PASSWORD\n    }\n}\n","operationName":"Users","variables":{}}
+2025-01-12 17:26:24,859 - INFO - Request Method: POST
+2025-01-12 17:26:24,859 - INFO - Request URL: http://127.0.0.1:5000/api/v1/
+2025-01-12 17:26:24,859 - INFO - Request Headers: Accept: */*
+Content-Type: application/json
+User-Agent: PostmanClient/11.27.2 (AppId=3666f205-f988-40bc-943f-aedf57fa62b4)
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNjY3MTI4MCwianRpIjoiMzA2YWIzMTctMzc2YS00ZWEwLTlkNjUtZTJiODU2YTFhY2UwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3MzY2NzEyODAsImNzcmYiOiI2MGUzYzkwZS01ZTc4LTRjNTMtYjk0Zi0yNGI1YjhiYTk0YzciLCJleHAiOjE3MzY2NzIxODB9.lp9wOk86Kh9fFiTLdlHibnG2sMRFhcRq9hYk0dF-7EQ
+Host: 127.0.0.1:5000
+Content-Length: 331
+Connection: keep-alive
+
+
+2025-01-12 17:26:24,859 - INFO - Request Data: {"query":"query Users {\n    users {\n        ID\n        CREATOR\n        MODIFIER\n        IS_ACTIVE\n        USERNAME\n        LOGINNAME\n        FULLNAME\n        ADDRESS\n        PHONE\n        EMAIL\n        ROLE\n        CREATE_TIME\n        MODIFY_TIME\n        PASSWORD\n    }\n}\n","operationName":"Users","variables":{}}
+2025-01-12 17:27:00,516 - INFO - Request Method: POST
+2025-01-12 17:27:00,517 - INFO - Request URL: http://127.0.0.1:5000/api/v1/
+2025-01-12 17:27:00,517 - INFO - Request Headers: Accept: */*
+Content-Type: application/json
+User-Agent: PostmanClient/11.27.2 (AppId=3666f205-f988-40bc-943f-aedf57fa62b4)
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNjY3MTI4MCwianRpIjoiMzA2YWIzMTctMzc2YS00ZWEwLTlkNjUtZTJiODU2YTFhY2UwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3MzY2NzEyODAsImNzcmYiOiI2MGUzYzkwZS01ZTc4LTRjNTMtYjk0Zi0yNGI1YjhiYTk0YzciLCJleHAiOjE3MzY2NzIxODB9.lp9wOk86Kh9fFiTLdlHibnG2sMRFhcRq9hYk0dF-7EQ
+Host: 127.0.0.1:5000
+Content-Length: 331
+Connection: keep-alive
+
+
+2025-01-12 17:27:00,517 - INFO - Request Data: {"query":"query Users {\n    users {\n        ID\n        CREATOR\n        MODIFIER\n        IS_ACTIVE\n        USERNAME\n        LOGINNAME\n        FULLNAME\n        ADDRESS\n        PHONE\n        EMAIL\n        ROLE\n        CREATE_TIME\n        MODIFY_TIME\n        PASSWORD\n    }\n}\n","operationName":"Users","variables":{}}
+2025-01-12 17:27:18,101 - INFO - Request Method: POST
+2025-01-12 17:27:18,101 - INFO - Request URL: http://127.0.0.1:5000/api/v1/
+2025-01-12 17:27:18,101 - INFO - Request Headers: Accept: */*
+Content-Type: application/json
+User-Agent: PostmanClient/11.27.2 (AppId=3666f205-f988-40bc-943f-aedf57fa62b4)
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNjY3MTI4MCwianRpIjoiMzA2YWIzMTctMzc2YS00ZWEwLTlkNjUtZTJiODU2YTFhY2UwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3MzY2NzEyODAsImNzcmYiOiI2MGUzYzkwZS01ZTc4LTRjNTMtYjk0Zi0yNGI1YjhiYTk0YzciLCJleHAiOjE3MzY2NzIxODB9.lp9wOk86Kh9fFiTLdlHibnG2sMRFhcRq9hYk0dF-7EQ
+Host: 127.0.0.1:5000
+Content-Length: 331
+Connection: keep-alive
+
+
+2025-01-12 17:27:18,101 - INFO - Request Data: {"query":"query Users {\n    users {\n        ID\n        CREATOR\n        MODIFIER\n        IS_ACTIVE\n        USERNAME\n        LOGINNAME\n        FULLNAME\n        ADDRESS\n        PHONE\n        EMAIL\n        ROLE\n        CREATE_TIME\n        MODIFY_TIME\n        PASSWORD\n    }\n}\n","operationName":"Users","variables":{}}
+2025-01-12 17:35:30,107 - INFO - Request Method: POST
+2025-01-12 17:35:30,107 - INFO - Request URL: http://127.0.0.1:5000/api/v1/
+2025-01-12 17:35:30,107 - INFO - Request Headers: Accept: */*
+Content-Type: application/json
+User-Agent: PostmanClient/11.27.2 (AppId=3666f205-f988-40bc-943f-aedf57fa62b4)
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNjY3MTI4MCwianRpIjoiMzA2YWIzMTctMzc2YS00ZWEwLTlkNjUtZTJiODU2YTFhY2UwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3MzY2NzEyODAsImNzcmYiOiI2MGUzYzkwZS01ZTc4LTRjNTMtYjk0Zi0yNGI1YjhiYTk0YzciLCJleHAiOjE3MzY2NzIxODB9.lp9wOk86Kh9fFiTLdlHibnG2sMRFhcRq9hYk0dF-7EQ
+Host: 127.0.0.1:5000
+Content-Length: 331
+Connection: keep-alive
+
+
+2025-01-12 17:35:30,107 - INFO - Request Data: {"query":"query Users {\n    users {\n        ID\n        CREATOR\n        MODIFIER\n        IS_ACTIVE\n        USERNAME\n        LOGINNAME\n        FULLNAME\n        ADDRESS\n        PHONE\n        EMAIL\n        ROLE\n        CREATE_TIME\n        MODIFY_TIME\n        PASSWORD\n    }\n}\n","operationName":"Users","variables":{}}
+2025-01-12 17:39:58,245 - INFO - Request Method: POST
+2025-01-12 17:39:58,245 - INFO - Request URL: http://127.0.0.1:5000/api/v1/
+2025-01-12 17:39:58,245 - INFO - Request Headers: Accept: */*
+Content-Type: application/json
+User-Agent: PostmanClient/11.27.2 (AppId=3666f205-f988-40bc-943f-aedf57fa62b4)
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNjY3MTI4MCwianRpIjoiMzA2YWIzMTctMzc2YS00ZWEwLTlkNjUtZTJiODU2YTFhY2UwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3MzY2NzEyODAsImNzcmYiOiI2MGUzYzkwZS01ZTc4LTRjNTMtYjk0Zi0yNGI1YjhiYTk0YzciLCJleHAiOjE3MzY2NzIxODB9.lp9wOk86Kh9fFiTLdlHibnG2sMRFhcRq9hYk0dF-7EQ
+Host: 127.0.0.1:5000
+Content-Length: 331
+Connection: keep-alive
+
+
+2025-01-12 17:39:58,246 - INFO - Request Data: {"query":"query Users {\n    users {\n        ID\n        CREATOR\n        MODIFIER\n        IS_ACTIVE\n        USERNAME\n        LOGINNAME\n        FULLNAME\n        ADDRESS\n        PHONE\n        EMAIL\n        ROLE\n        CREATE_TIME\n        MODIFY_TIME\n        PASSWORD\n    }\n}\n","operationName":"Users","variables":{}}
+2025-01-12 17:41:43,623 - INFO - Request Method: POST
+2025-01-12 17:41:43,623 - INFO - Request URL: http://127.0.0.1:5000/api/v1/
+2025-01-12 17:41:43,623 - INFO - Request Headers: Accept: */*
+Content-Type: application/json
+User-Agent: PostmanClient/11.27.2 (AppId=3666f205-f988-40bc-943f-aedf57fa62b4)
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNjY3MTI4MCwianRpIjoiMzA2YWIzMTctMzc2YS00ZWEwLTlkNjUtZTJiODU2YTFhY2UwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3MzY2NzEyODAsImNzcmYiOiI2MGUzYzkwZS01ZTc4LTRjNTMtYjk0Zi0yNGI1YjhiYTk0YzciLCJleHAiOjE3MzY2NzIxODB9.lp9wOk86Kh9fFiTLdlHibnG2sMRFhcRq9hYk0dF-7EQ
+Host: 127.0.0.1:5000
+Content-Length: 331
+Connection: keep-alive
+
+
+2025-01-12 17:41:43,624 - INFO - Request Data: {"query":"query Users {\n    users {\n        ID\n        CREATOR\n        MODIFIER\n        IS_ACTIVE\n        USERNAME\n        LOGINNAME\n        FULLNAME\n        ADDRESS\n        PHONE\n        EMAIL\n        ROLE\n        CREATE_TIME\n        MODIFY_TIME\n        PASSWORD\n    }\n}\n","operationName":"Users","variables":{}}
+2025-01-12 17:43:48,244 - INFO - Request Method: POST
+2025-01-12 17:43:48,244 - INFO - Request URL: http://127.0.0.1:5000/api/v1/
+2025-01-12 17:43:48,244 - INFO - Request Headers: Accept: */*
+Content-Type: application/json
+User-Agent: PostmanClient/11.27.2 (AppId=3666f205-f988-40bc-943f-aedf57fa62b4)
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNjY3MTI4MCwianRpIjoiMzA2YWIzMTctMzc2YS00ZWEwLTlkNjUtZTJiODU2YTFhY2UwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3MzY2NzEyODAsImNzcmYiOiI2MGUzYzkwZS01ZTc4LTRjNTMtYjk0Zi0yNGI1YjhiYTk0YzciLCJleHAiOjE3MzY2NzIxODB9.lp9wOk86Kh9fFiTLdlHibnG2sMRFhcRq9hYk0dF-7EQ
+Host: 127.0.0.1:5000
+Content-Length: 29
+Connection: keep-alive
+
+
+2025-01-12 17:43:48,244 - INFO - Request Data: {"query":"\n","variables":{}}
+2025-01-12 17:44:04,268 - INFO - Request Method: POST
+2025-01-12 17:44:04,268 - INFO - Request URL: http://127.0.0.1:5000/api/v1/
+2025-01-12 17:44:04,268 - INFO - Request Headers: Accept: */*
+Content-Type: application/json
+User-Agent: PostmanClient/11.27.2 (AppId=3666f205-f988-40bc-943f-aedf57fa62b4)
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNjY3MTI4MCwianRpIjoiMzA2YWIzMTctMzc2YS00ZWEwLTlkNjUtZTJiODU2YTFhY2UwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3MzY2NzEyODAsImNzcmYiOiI2MGUzYzkwZS01ZTc4LTRjNTMtYjk0Zi0yNGI1YjhiYTk0YzciLCJleHAiOjE3MzY2NzIxODB9.lp9wOk86Kh9fFiTLdlHibnG2sMRFhcRq9hYk0dF-7EQ
+Host: 127.0.0.1:5000
+Content-Length: 1789
+Connection: keep-alive
+
+
+2025-01-12 17:44:04,268 - INFO - Request Data: {"query":"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ","variables":{}}
+2025-01-12 17:44:52,453 - INFO - Request Method: POST
+2025-01-12 17:44:52,453 - INFO - Request URL: http://127.0.0.1:5000/api/v1/
+2025-01-12 17:44:52,454 - INFO - Request Headers: Accept: */*
+Content-Type: application/json
+User-Agent: PostmanClient/11.27.2 (AppId=3666f205-f988-40bc-943f-aedf57fa62b4)
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNjY3MTI4MCwianRpIjoiMzA2YWIzMTctMzc2YS00ZWEwLTlkNjUtZTJiODU2YTFhY2UwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3MzY2NzEyODAsImNzcmYiOiI2MGUzYzkwZS01ZTc4LTRjNTMtYjk0Zi0yNGI1YjhiYTk0YzciLCJleHAiOjE3MzY2NzIxODB9.lp9wOk86Kh9fFiTLdlHibnG2sMRFhcRq9hYk0dF-7EQ
+Host: 127.0.0.1:5000
+Content-Length: 327
+Connection: keep-alive
+
+
+2025-01-12 17:44:52,454 - INFO - Request Data: {"query":"mutation CreatePlugins {\n    createPlugins(\n        ICON: \"report.png\"\n        IS_ACTIVE: true\n        PLUGIN_GROUP_ID: null\n        PLUGIN_LINK: \"SMG.UC.Report\"\n        PLUGIN_NAME: \"Report\"\n        PLUGIN_TYPE_ID: 1\n    ) {\n        success\n    }\n}\n","operationName":"CreatePlugins","variables":{}}
+2025-01-12 17:46:52,688 - INFO - Request Method: POST
+2025-01-12 17:46:52,688 - INFO - Request URL: http://127.0.0.1:5000/api/v1/
+2025-01-12 17:46:52,688 - INFO - Request Headers: Accept: */*
+Content-Type: application/json
+User-Agent: PostmanClient/11.27.2 (AppId=3666f205-f988-40bc-943f-aedf57fa62b4)
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNjY3MTI4MCwianRpIjoiMzA2YWIzMTctMzc2YS00ZWEwLTlkNjUtZTJiODU2YTFhY2UwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3MzY2NzEyODAsImNzcmYiOiI2MGUzYzkwZS01ZTc4LTRjNTMtYjk0Zi0yNGI1YjhiYTk0YzciLCJleHAiOjE3MzY2NzIxODB9.lp9wOk86Kh9fFiTLdlHibnG2sMRFhcRq9hYk0dF-7EQ
+Host: 127.0.0.1:5000
+Content-Length: 296
+Connection: keep-alive
+
+
+2025-01-12 17:46:52,688 - INFO - Request Data: {"query":"mutation CreatePlugins {\n    createPlugins(\n        ICON: \"report.png\"\n        IS_ACTIVE: true\n        PLUGIN_LINK: \"SMG.UC.Report\"\n        PLUGIN_NAME: \"Report\"\n        PLUGIN_TYPE_ID: 1\n    ) {\n        success\n    }\n}\n","operationName":"CreatePlugins","variables":{}}
+2025-01-12 17:54:22,192 - INFO - Request Method: POST
+2025-01-12 17:54:22,192 - INFO - Request URL: http://localhost:5000/auth/login
+2025-01-12 17:54:22,192 - INFO - Request Headers: Content-Type: application/json
+User-Agent: PostmanRuntime/7.43.0
+Accept: */*
+Postman-Token: c7d453ea-685d-427d-a494-4e97763ba2da
+Host: localhost:5000
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 45
+
+
+2025-01-12 17:54:22,192 - INFO - Request Data: {
+    "username":"1",
+    "password":"1"
+}
+2025-01-12 17:54:22,237 - INFO - Creating access token for user ID: 2
+2025-01-12 17:54:31,702 - INFO - Request Method: POST
+2025-01-12 17:54:31,702 - INFO - Request URL: http://127.0.0.1:5000/api/v1/
+2025-01-12 17:54:31,702 - INFO - Request Headers: Accept: */*
+Content-Type: application/json
+User-Agent: PostmanClient/11.27.2 (AppId=3666f205-f988-40bc-943f-aedf57fa62b4)
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNjY3OTI2MiwianRpIjoiNDhmMTI4OTMtODM4NS00Y2I0LWExNDEtYTYwNGU4NWM4MjI2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjIiLCJuYmYiOjE3MzY2NzkyNjIsImNzcmYiOiI1ZTQwNjcwZi1kYTdiLTQ2YjEtOTlkZC1hNjM0ODQwNTQ4OTQiLCJleHAiOjE3MzY2ODAxNjJ9.GWPi8hvqVivklgmnZ0AaNBYKM2nNY66dGKbc30VYeMo
+Host: 127.0.0.1:5000
+Content-Length: 296
+Connection: keep-alive
+
+
+2025-01-12 17:54:31,702 - INFO - Request Data: {"query":"mutation CreatePlugins {\n    createPlugins(\n        ICON: \"report.png\"\n        IS_ACTIVE: true\n        PLUGIN_LINK: \"SMG.UC.Report\"\n        PLUGIN_NAME: \"Report\"\n        PLUGIN_TYPE_ID: 1\n    ) {\n        success\n    }\n}\n","operationName":"CreatePlugins","variables":{}}
+2025-01-12 17:54:43,148 - INFO - Request Method: POST
+2025-01-12 17:54:43,148 - INFO - Request URL: http://127.0.0.1:5000/api/v1/
+2025-01-12 17:54:43,148 - INFO - Request Headers: Accept: */*
+Content-Type: application/json
+User-Agent: PostmanClient/11.27.2 (AppId=3666f205-f988-40bc-943f-aedf57fa62b4)
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNjY3OTI2MiwianRpIjoiNDhmMTI4OTMtODM4NS00Y2I0LWExNDEtYTYwNGU4NWM4MjI2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjIiLCJuYmYiOjE3MzY2NzkyNjIsImNzcmYiOiI1ZTQwNjcwZi1kYTdiLTQ2YjEtOTlkZC1hNjM0ODQwNTQ4OTQiLCJleHAiOjE3MzY2ODAxNjJ9.GWPi8hvqVivklgmnZ0AaNBYKM2nNY66dGKbc30VYeMo
+Host: 127.0.0.1:5000
+Content-Length: 308
+Connection: keep-alive
+
+
+2025-01-12 17:54:43,149 - INFO - Request Data: {"query":"query Plugins {\n    plugins {\n        ID\n        CREATE_TIME\n        CREATOR\n        MODIFIER\n        MODIFY_TIME\n        PLUGIN_NAME\n        PLUGIN_LINK\n        IS_ACTIVE\n        PLUGIN_GROUP_ID\n        PLUGIN_TYPE_ID\n        ICON\n    }\n}\n","operationName":"Plugins","variables":{}}
+2025-01-12 17:56:28,393 - INFO - Request Method: POST
+2025-01-12 17:56:28,393 - INFO - Request URL: http://127.0.0.1:5000/api/v1/
+2025-01-12 17:56:28,393 - INFO - Request Headers: Accept: */*
+Content-Type: application/json
+User-Agent: PostmanClient/11.27.2 (AppId=3666f205-f988-40bc-943f-aedf57fa62b4)
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNjY3OTI2MiwianRpIjoiNDhmMTI4OTMtODM4NS00Y2I0LWExNDEtYTYwNGU4NWM4MjI2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjIiLCJuYmYiOjE3MzY2NzkyNjIsImNzcmYiOiI1ZTQwNjcwZi1kYTdiLTQ2YjEtOTlkZC1hNjM0ODQwNTQ4OTQiLCJleHAiOjE3MzY2ODAxNjJ9.GWPi8hvqVivklgmnZ0AaNBYKM2nNY66dGKbc30VYeMo
+Host: 127.0.0.1:5000
+Content-Length: 293
+Connection: keep-alive
+
+
+2025-01-12 17:56:28,394 - INFO - Request Data: {"query":"mutation CreatePlugins {\n    createPlugins(\n        ICON: \"icons8-report-20.png\"\n        IS_ACTIVE: true\n        PLUGIN_LINK: \"SMG.Plugins.ReportType\"\n        PLUGIN_NAME: \"Report Type\"\n    ) {\n        success\n    }\n}\n","operationName":"CreatePlugins","variables":{}}
+2025-01-12 17:56:40,555 - INFO - Request Method: POST
+2025-01-12 17:56:40,555 - INFO - Request URL: http://127.0.0.1:5000/api/v1/
+2025-01-12 17:56:40,556 - INFO - Request Headers: Accept: */*
+Content-Type: application/json
+User-Agent: PostmanClient/11.27.2 (AppId=3666f205-f988-40bc-943f-aedf57fa62b4)
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNjY3OTI2MiwianRpIjoiNDhmMTI4OTMtODM4NS00Y2I0LWExNDEtYTYwNGU4NWM4MjI2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjIiLCJuYmYiOjE3MzY2NzkyNjIsImNzcmYiOiI1ZTQwNjcwZi1kYTdiLTQ2YjEtOTlkZC1hNjM0ODQwNTQ4OTQiLCJleHAiOjE3MzY2ODAxNjJ9.GWPi8hvqVivklgmnZ0AaNBYKM2nNY66dGKbc30VYeMo
+Host: 127.0.0.1:5000
+Content-Length: 301
+Connection: keep-alive
+
+
+2025-01-12 17:56:40,556 - INFO - Request Data: {"query":"mutation CreatePlugins {\n    createPlugins(\n        ICON: \"icons8-report-20.png\"\n        IS_ACTIVE: true\n        PLUGIN_LINK: \"SMG.Plugins.ReportTemplate\"\n        PLUGIN_NAME: \"Report Template\"\n    ) {\n        success\n    }\n}\n","operationName":"CreatePlugins","variables":{}}
+2025-01-12 17:57:02,263 - INFO - Request Method: POST
+2025-01-12 17:57:02,263 - INFO - Request URL: http://127.0.0.1:5000/api/v1/
+2025-01-12 17:57:02,263 - INFO - Request Headers: Accept: */*
+Content-Type: application/json
+User-Agent: PostmanClient/11.27.2 (AppId=3666f205-f988-40bc-943f-aedf57fa62b4)
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNjY3OTI2MiwianRpIjoiNDhmMTI4OTMtODM4NS00Y2I0LWExNDEtYTYwNGU4NWM4MjI2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjIiLCJuYmYiOjE3MzY2NzkyNjIsImNzcmYiOiI1ZTQwNjcwZi1kYTdiLTQ2YjEtOTlkZC1hNjM0ODQwNTQ4OTQiLCJleHAiOjE3MzY2ODAxNjJ9.GWPi8hvqVivklgmnZ0AaNBYKM2nNY66dGKbc30VYeMo
+Host: 127.0.0.1:5000
+Content-Length: 320
+Connection: keep-alive
+
+
+2025-01-12 17:57:02,263 - INFO - Request Data: {"query":"mutation CreatePlugins {\n    createPlugins(\n        ICON: \"account.png\"\n        IS_ACTIVE: true\n        PLUGIN_LINK: \"SMG.UC.AccountInfomation\"\n        PLUGIN_NAME: \"Account Infomation\"\n        PLUGIN_TYPE_ID: 1\n    ) {\n        success\n    }\n}\n","operationName":"CreatePlugins","variables":{}}
+2025-01-12 17:57:12,289 - INFO - Request Method: POST
+2025-01-12 17:57:12,290 - INFO - Request URL: http://127.0.0.1:5000/api/v1/
+2025-01-12 17:57:12,290 - INFO - Request Headers: Accept: */*
+Content-Type: application/json
+User-Agent: PostmanClient/11.27.2 (AppId=3666f205-f988-40bc-943f-aedf57fa62b4)
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNjY3OTI2MiwianRpIjoiNDhmMTI4OTMtODM4NS00Y2I0LWExNDEtYTYwNGU4NWM4MjI2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjIiLCJuYmYiOjE3MzY2NzkyNjIsImNzcmYiOiI1ZTQwNjcwZi1kYTdiLTQ2YjEtOTlkZC1hNjM0ODQwNTQ4OTQiLCJleHAiOjE3MzY2ODAxNjJ9.GWPi8hvqVivklgmnZ0AaNBYKM2nNY66dGKbc30VYeMo
+Host: 127.0.0.1:5000
+Content-Length: 308
+Connection: keep-alive
+
+
+2025-01-12 17:57:12,290 - INFO - Request Data: {"query":"query Plugins {\n    plugins {\n        ID\n        CREATE_TIME\n        CREATOR\n        MODIFIER\n        MODIFY_TIME\n        PLUGIN_NAME\n        PLUGIN_LINK\n        IS_ACTIVE\n        PLUGIN_GROUP_ID\n        PLUGIN_TYPE_ID\n        ICON\n    }\n}\n","operationName":"Plugins","variables":{}}
