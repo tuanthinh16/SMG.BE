@@ -71,7 +71,7 @@ class CreateReportType(graphene.Mutation):
     report_type = graphene.Field(ReportType)
 
     @jwt_required()
-    def mutate(self, info, report_type_code, report_type_name, report_type_group_id, creator):
+    def mutate(self, info, report_type_code, report_type_name, report_type_group_id):
         current_user = str(get_jwt_identity())
         create_time = convertTime.datetime_to_time_number(datetime.now(utc).astimezone(timezone('Asia/Bangkok')))
 
@@ -79,7 +79,7 @@ class CreateReportType(graphene.Mutation):
             report_type_code=report_type_code,
             report_type_name=report_type_name,
             report_type_group_id=report_type_group_id,
-            creator=creator,
+            creator=current_user or "ADMIN",
             create_time=create_time,
             is_active=True
         )
@@ -100,7 +100,7 @@ class CreateReportType(graphene.Mutation):
             report_type_code=report_type_code,
             report_type_name=report_type_name,
             report_type_group_id=report_type_group_id,
-            creator=creator,
+            creator=current_user or "ADMIN",
             create_time=create_time,
             is_active=True
         )
@@ -135,6 +135,7 @@ class UpdateReportType(graphene.Mutation):
                 if modifier:
                     report_type.modifier = modifier
                 report_type.modify_time = modify_time
+                modifier = current_user or "ADMIN"
                 session.commit()
                 return UpdateReportType(success=True, report_type=report_type)
             else:

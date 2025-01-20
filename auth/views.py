@@ -26,7 +26,7 @@ def login():
             return jsonify({"error": "Invalid credentials"}), 401
 
         # Tạo token JWT
-        user_id = str(user.id)  # Lấy ID người dùng
+        user_id = str(user.username)  # Lấy ID người dùng
         log.logger.info(f"Creating access token for user ID: {user_id}")
         access_token = create_access_token(identity=user_id)
 

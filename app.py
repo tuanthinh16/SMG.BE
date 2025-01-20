@@ -5,7 +5,9 @@ from flask_graphql import GraphQLView
 from flask_jwt_extended import JWTManager
 from schema import schema
 from auth.views import auth_blueprint
-from config import db, SessionLocal, engine, JWT_SECRET_KEY,SQLALCHEMY_DATABASE_URI
+from config import db, SessionLocal, engine, JWT_SECRET_KEY,SQLALCHEMY_DATABASE_URI,CLOUD_NAME,API_KEY,API_SECRET
+import cloudinary
+import cloudinary.uploader
 
 app = Flask(__name__)
 cors = CORS(app, resources={
@@ -14,6 +16,12 @@ cors = CORS(app, resources={
 })
 # Cấu hình Flask-JWT-Extended
 app.config['JWT_SECRET_KEY'] = JWT_SECRET_KEY  # Chìa khóa bí mật JWT lấy từ config
+# Cấu hình Cloudinary
+cloudinary.config(
+    cloud_name=CLOUD_NAME,
+    api_key=API_KEY,
+    api_secret=API_SECRET
+)
 
 jwt = JWTManager(app)
 
@@ -42,7 +50,7 @@ def log_request():
     log.logger.info(f"Request URL: {request.url}")
     log.logger.info(f"Request Headers: {request.headers}")
     log.logger.info(f"Request Data: {request.get_data(as_text=True)}")  # Log data nếu có
-
+#api nhận graphql
 @app.route('/api/v1/', methods=['POST'])
 def graphql_server():
     data = request.get_json()  # Nhận dữ liệu JSON từ POST request
@@ -52,6 +60,35 @@ def graphql_server():
     # Tạo GraphQLView và thực hiện truy vấn
     view = GraphQLView.as_view('graphql', schema=schema, graphiql=False)
     return view()
+#Upload ảnh
+@app.route('/api/v1/upload', methods=['POST'])
+def Process_Upload():
+    file = request.files['file'] 
+    type = request.form['type']
+    try:
+        folder_name = "SMG/"+type
+        upload_result = cloudinary.uploader.upload(file, folder=folder_name)
+        return jsonify({"url": upload_result['secure_url']})  # Trả về URL của ảnh
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+#Upload nhiều ảnh
+@app.route('/api/v1/upload-multiple', methods=['POST'])
+def Process_Upload_Multiple():
+    files = request.files.getlist('files')  # Lấy danh sách file từ request
+    type = request.form['type']  # Lấy type từ form data
+
+    if not files:
+        return jsonify({"error": "No files uploaded"}), 400
+
+    urls = []
+    try:
+        folder_name = f"SMG/{type}"  
+        for file in files:
+            upload_result = cloudinary.uploader.upload(file, folder=folder_name)
+            urls.append(upload_result['secure_url']) 
+        return jsonify({"urls": urls})  
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000, debug=True)

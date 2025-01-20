@@ -22,6 +22,10 @@ db = SQLAlchemy()
 
 # Cấu hình JWT
 JWT_SECRET_KEY = os.getenv('JWT_SECRET_KEY', 'thinhvippronghean')  # Chìa khóa bí mật JWT
+#Cấu hình Cloudinary
+CLOUD_NAME = "dwweabf16"
+API_KEY= "723518173222341"
+API_SECRET = "KMNHUvnxM7qGRMyNSVVJdC1lQS8"
 
 # Hàm kết nối cơ sở dữ liệu PostgreSQL thông thường (không dùng SQLAlchemy ORM)
 def get_oracle_connection():

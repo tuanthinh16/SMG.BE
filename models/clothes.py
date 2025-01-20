@@ -118,34 +118,17 @@ class CreateClothes(graphene.Mutation):
     clothes = graphene.Field(Clothes)
 
     @jwt_required()
-    def mutate(self, info, clothes_code, clothes_name, clothes_type_id, parent_id, branch_name, country_name, clothes_size, clothes_color, amount, price, vat, clothes_description, clothes_image, clothes_status, imp_time, username, request_time, request_status, request_description):
+    def mutate(self, info, **kwargs):
         current_user = str(get_jwt_identity())
         create_time = convertTime.datetime_to_time_number(datetime.now(utc).astimezone(timezone('Asia/Bangkok')))
 
-        new_clothes = ClothesModel(
-            clothes_code=clothes_code,
-            clothes_name=clothes_name,
-            clothes_type_id=clothes_type_id,
-            parent_id=parent_id,
-            branch_name=branch_name,
-            country_name=country_name,
-            clothes_size=clothes_size,
-            clothes_color=clothes_color,
-            amount=amount,
-            price=price,
-            vat=vat,
-            clothes_description=clothes_description,
-            clothes_image=clothes_image,
-            clothes_status=clothes_status,
-            imp_time=imp_time,
-            username=username,
-            request_time=request_time,
-            request_status=request_status,
-            request_description=request_description,
-            creator=current_user,
-            create_time=create_time,
-            is_active=True
-        )
+        # Filter out None values
+        kwargs = {k: v for k, v in kwargs.items() if v is not None}
+        kwargs['creator'] = current_user
+        kwargs['create_time'] = create_time
+        kwargs['is_active'] = True
+
+        new_clothes = ClothesModel(**kwargs)
 
         session = SessionLocal()
         try:
@@ -158,33 +141,9 @@ class CreateClothes(graphene.Mutation):
         finally:
             session.close()
 
-        clothes = Clothes(
-            id=clothes_id,
-            clothes_code=clothes_code,
-            clothes_name=clothes_name,
-            clothes_type_id=clothes_type_id,
-            parent_id=parent_id,
-            branch_name=branch_name,
-            country_name=country_name,
-            clothes_size=clothes_size,
-            clothes_color=clothes_color,
-            amount=amount,
-            price=price,
-            vat=vat,
-            clothes_description=clothes_description,
-            clothes_image=clothes_image,
-            clothes_status=clothes_status,
-            imp_time=imp_time,
-            username=username,
-            request_time=request_time,
-            request_status=request_status,
-            request_description=request_description,
-            creator=current_user,
-            create_time=create_time,
-            is_active=True
-        )
+        clothes = Clothes(id=clothes_id, **kwargs)
         return CreateClothes(success=True, clothes=clothes)
-
+    
 class UpdateClothes(graphene.Mutation):
     class Arguments:
         id = graphene.Int()
