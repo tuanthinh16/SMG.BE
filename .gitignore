@@ -1,0 +1,9 @@
+# Bỏ qua file log.txt
+log.txt
+
+# Bỏ qua thư mục __pycache__
+__pycache__/
+
+# Bỏ qua các file Python bytecode (.pyc, .pyo)
+*.pyc
+*.pyo
