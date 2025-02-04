@@ -20,7 +20,7 @@ def login():
     # Kiểm tra thông tin đăng nhập trong CSDL
     session: Session = SessionLocal()
     try:
-        user = session.query(User).filter(User.username == username).first()
+        user = session.query(User).filter(User.username.ilike(username)).first()
         if not user or user.password != password:  # Kiểm tra mật khẩu
             log.logger.warning(f"Login failed for username: {username}")
             return jsonify({"error": "Invalid credentials"}), 401
