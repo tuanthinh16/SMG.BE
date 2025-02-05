@@ -2,6 +2,7 @@ import os
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from datetime import timedelta
 
 # Cấu hình cơ sở dữ liệu PostgreSQL
 DB_USER = "postgres"  # Tên người dùng PostgreSQL
@@ -22,6 +23,9 @@ db = SQLAlchemy()
 
 # Cấu hình JWT
 JWT_SECRET_KEY = os.getenv('JWT_SECRET_KEY', 'thinhvippronghean')  # Chìa khóa bí mật JWT
+JWT_ACCESS_TOKEN_EXPIRES = timedelta(minutes=2)  # Thời gian sống của access token
+JWT_REFRESH_TOKEN_EXPIRES = timedelta(days=30)  # Thời gian sống của refresh token
+
 #Cấu hình Cloudinary
 CLOUD_NAME = "dwweabf16"
 API_KEY= "723518173222341"

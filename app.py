@@ -5,7 +5,7 @@ from flask_graphql import GraphQLView
 from flask_jwt_extended import JWTManager
 from schema import schema
 from auth.views import auth_blueprint
-from config import db, SessionLocal, engine, JWT_SECRET_KEY,SQLALCHEMY_DATABASE_URI,CLOUD_NAME,API_KEY,API_SECRET
+from config import JWT_ACCESS_TOKEN_EXPIRES, JWT_REFRESH_TOKEN_EXPIRES, db, SessionLocal, engine, JWT_SECRET_KEY,SQLALCHEMY_DATABASE_URI,CLOUD_NAME,API_KEY,API_SECRET
 import cloudinary
 import cloudinary.uploader
 
@@ -15,7 +15,9 @@ cors = CORS(app, resources={
     r"/auth/login": {"origins": "*"}  # Cấu hình CORS cho /auth/login
 })
 # Cấu hình Flask-JWT-Extended
-app.config['JWT_SECRET_KEY'] = JWT_SECRET_KEY  # Chìa khóa bí mật JWT lấy từ config
+app.config['JWT_SECRET_KEY'] = JWT_SECRET_KEY  
+app.config['JWT_ACCESS_TOKEN_EXPIRES'] = JWT_ACCESS_TOKEN_EXPIRES
+app.config['JWT_REFRESH_TOKEN_EXPIRES'] = JWT_REFRESH_TOKEN_EXPIRES
 # Cấu hình Cloudinary
 cloudinary.config(
     cloud_name=CLOUD_NAME,
